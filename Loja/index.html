@@ -12,8 +12,11 @@
     <link rel="stylesheet" href="css/grid-layout.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/modal.css">
     <!-- arquivo de responsividade -->
-    <!-- <link rel="stylesheet" href="css/responsivo.css"> -->
+    <link rel="stylesheet" href="css/responsivo.css">
 </head>
 <body>
     <!-- Inicio do cabeçalho -->
@@ -43,7 +46,15 @@
             <div class="grid-2 login">
                 <img class="icone" src="img/Icones/Login.png" alt="Icone de Login">
                 <p>
-                    <a href="#">Login</a>/<a href="#">Cadastro</a>
+                    <a href="#" id="login" class="pagina">Login</a>/<a href="#" id="cadastro" class="pagina">Cadastro</a>
+                    <div id="modal">
+                        <div class="modal-box">
+                            <iframe src="" class="modal-box-conteudo">
+                
+                            </iframe>
+                            <div class="fechar">X</div>
+                        </div>
+                    </div>
                 </p>
 
                 <div class="redes">
@@ -107,64 +118,84 @@
         <!-- Inicio dos Produtos -->
         <div class="produtos">
             <div class="container">
-                <div class="grid-2">
-                    <h2>Moletom Vingadores Ultimato</h2>
-                    <img src="img/Produtos/Moletom Ultimato.png" alt="">
-                    <p><em>Vestuários</em></p>
-                    <p class="preco"><b>R$ 199,99</b></p>
-                    <button>Carrinho</button>
-                </div>
-                <div class="grid-2">
-                    <h2>Box de Livros Watchmen</h2>
-                    <img src="img/Produtos/Box Watchmen.png" alt="">
-                    <p><em>Livros</em></p>
-                    <p class="preco"><b>R$ 199,99</b></p>
-                    <button>Carrinho</button>
-                </div>
-                <div class="grid-2">
-                    <h2>Funko Elliot</h2>
-                    <img src="img/Produtos/Funko Elliot.png" alt="">
-                    <p><em>Colecionáveis</em></p>
-                    <p class="preco"><b>R$ 199,99</b></p>
-                    <button>Carrinho</button>
-                </div>
-                    <div class="grid-2">
-                    <h2>Funko Pokemon</h2>
-                    <img src="img/Produtos/Pokemon Funko.png" alt="">
-                    <p><em>Colecionáveis</em></p>
-                    <p class="preco"><b>R$ 199,99</b></p>
-                    <button>Carrinho</button>
-                </div>
+                <ul class="caixa-rolagem">
+                    <li class="produto">
+                        <div class="grid-2">
+                            <h2>Moletom Vingadores Ultimato</h2>
+                            <img src="img/Produtos/Moletom Ultimato.png" alt="">
+                            <p><em>Vestuários</em></p>
+                            <p class="preco"><b>R$ 199,99</b></p>
+                            <button>Carrinho</button>
+                        </div>
+                    </li>
+                    <li class="produto">
+                        <div class="grid-2">
+                            <h2>Box de Livros Watchmen</h2>
+                            <img src="img/Produtos/Box Watchmen.png" alt="">
+                            <p><em>Livros</em></p>
+                            <p class="preco"><b>R$ 199,99</b></p>
+                            <button>Carrinho</button>
+                        </div>
+                    </li>
+                    <li class="produto">
+                        <div class="grid-2">
+                            <h2>Funko Elliot</h2>
+                            <img src="img/Produtos/Funko Elliot.png" alt="">
+                            <p><em>Colecionáveis</em></p>
+                            <p class="preco"><b>R$ 199,99</b></p>
+                            <button>Carrinho</button>
+                        </div>
+                    </li>
+                    <li class="produto">
+                        <div class="grid-2">
+                            <h2>Funko Pokemon</h2>
+                            <img src="img/Produtos/Pokemon Funko.png" alt="">
+                            <p><em>Colecionáveis</em></p>
+                        <p class="preco"><b>R$ 199,99</b></p>
+                        <button>Carrinho</button>
+                    </div>
+                    </li>
+                </ul>
             </div>
             <div class="container">
-                <div class="grid-2">
-                    <h2>Death Stranding</h2>
-                    <img src="img/Produtos/Death Stranding.png" alt="">
-                    <p><em>Jogos</em></p>
-                    <p class="preco"><b>R$ 199,99</b></p>
-                    <button>Carrinho</button>
-                </div>
-                <div class="grid-2">
-                    <h2>Star wars - Jedi Fallen Order</h2>
-                    <img src="img/Produtos/Star wars - Jedi fallen order.png" alt="">
-                    <p><em>Jogos</em></p>
-                    <p class="preco"><b>R$ 199,99</b></p>
-                    <button>Carrinho</button>
-                </div>
-                <div class="grid-2">
-                    <h2>Switch Luigi's Mansion 3</h2>
-                    <img src="img/Produtos/Switch LuigisMansion3.png" alt="">
-                    <p><em>Jogos</em></p>
-                    <p class="preco"><b>R$ 199,99</b></p>
-                    <button>Carrinho</button>
-                </div>
-                <div class="grid-2">
-                    <h2>Luigi</h2>
-                    <img src="img/Produtos/Luigi.png" alt="">
-                    <p><em>Colecionáveis</em></p>
-                    <p class="preco"><b>R$ 199,99</b></p>
-                    <button>Carrinho</button>
-                </div>
+                <ul class="caixa-rolagem">
+                    <li class="produto">
+                        <div class="grid-2">
+                            <h2>Death Stranding</h2>
+                            <img src="img/Produtos/Death Stranding.png" alt="">
+                            <p><em>Jogos</em></p>
+                            <p class="preco"><b>R$ 199,99</b></p>
+                            <button>Carrinho</button>
+                        </div>
+                    </li>
+                    <li class="produto">
+                        <div class="grid-2">
+                            <h2>Star wars - Jedi Fallen Order</h2>
+                            <img src="img/Produtos/Star wars - Jedi fallen order.png" alt="">
+                            <p><em>Jogos</em></p>
+                            <p class="preco"><b>R$ 199,99</b></p>
+                            <button>Carrinho</button>
+                        </div>
+                    </li>
+                    <li class="produto">
+                        <div class="grid-2">
+                            <h2>Switch Luigi's Mansion 3</h2>
+                            <img src="img/Produtos/Switch LuigisMansion3.png" alt="">
+                            <p><em>Jogos</em></p>
+                            <p class="preco"><b>R$ 199,99</b></p>
+                            <button>Carrinho</button>
+                        </div>
+                    </li>
+                    <li class="produto">
+                        <div class="grid-2">
+                            <h2>Luigi</h2>
+                            <img src="img/Produtos/Luigi.png" alt="">
+                            <p><em>Colecionáveis</em></p>
+                            <p class="preco"><b>R$ 199,99</b></p>
+                            <button>Carrinho</button>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
         <!-- Fim dos Produtos -->
@@ -196,6 +227,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/carrossel.js"></script>
+    <script src="js/modal.js"></script>
     <!-- Bootstrap JS -->
 	<!-- <script src="js/bootstrap.bundle.js"></script> -->
 </body>
