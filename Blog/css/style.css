@@ -1,0 +1,309 @@
+/* Importando a fonte "Bad Signal" para utiliza-la livremente no código */
+@font-face{
+    font-family: 'Bad Signal';/*Definindo o nome da nova fonte*/
+    src: url(../fonts/Bad_Signal.otf);/*Indicando o local onde a nova fontes está localizada*/
+}
+body{
+    font-size: 62.5%;
+    background: linear-gradient(90deg, rgba(37.5,37.5,37.5,1) 0%, rgba(255,255,255,1) 50%, rgba(37.5,37.5,37.5,1) 100%);/* Definindo o gradiente no background do cabeçalho */
+}
+/* Inicio do cabeçalho */
+
+/* Inicio da primeira parte do cabeçalho */
+header{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 50%, rgba(0,0,0,1) 100%);/* Definindo o gradiente no background do cabeçalho */
+}
+
+/* Inicio da Logo */
+.logo{
+    margin-bottom: 10px;
+}
+.logo img{
+    width: 70%;
+}
+/* Fim da logo */
+
+/* Inicio do Titulo e da busca */
+.titulo{
+    text-align: center;
+    color: #000;
+    font-size: 17em;
+    font-family: 'Bad Signal';
+    text-shadow: -5px 5px 1px #605b5b;
+}
+.busca input{
+    width: 89%;
+    font-family: 'Bad Signal';
+    background-color: #000;
+    border-style: none;
+    border-radius: 10px 10px;
+    padding: 10px 0 7px 0;
+    margin: 0;
+    color: white;
+    font-size: 2.8em;
+}
+.busca input::placeholder{
+    color: #fff;
+    padding-left: 10px;
+    font-size: 1em;
+}
+.busca button{
+    width: 7%;
+    background-color: #fff;
+    border-style: none;
+    border-radius: 10px 10px;
+    padding: 10px 10px 8px 10px;
+    transition: 1000ms;
+}
+.busca img{
+    width: 25px;
+    height: 25px;
+}
+.busca button:hover{
+    background-color: #000;
+    cursor: pointer;
+}
+/* Fim do Titulo e da busca */
+
+/* Inicio do Login */
+.login .icone{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+.login p, .login a{
+    font-family: 'Bad Signal';
+    color: #605b5b;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1px;
+    text-decoration: none;
+}
+.login a:hover{
+    color: #fff;
+}
+.login .redes p{
+    font-size: 2.3em;
+}
+.login .redes{
+    margin-top: 20px;
+}
+.login .icones_redes img{
+    width: 15%;
+    margin-left: 7px;
+}
+.login .icones_redes img:hover{
+    cursor: pointer;
+}
+.login .icones_redes{
+    margin-top: 10px;
+    margin-left: 68px;
+}
+/* Fim do Login */
+/* Fim da primeira parte do cabeçalho */
+
+/* Inicio da segunda parte do cabeçalho (menu) */
+nav.grid-8{
+    position: relative;
+    z-index: 10;/* Deixa a barra de navegação por cima de tudo dentro dela */
+    font: 2.8em 'Bad Signal';
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+nav li{
+    position: relative;
+    float: left;
+    list-style: none;
+    text-align: center;
+}
+nav ul .pipe::before{
+	content: "";	
+	display: block;
+	width: 5px;
+	height: 35px;
+	background-color: #fff;
+    margin: 8px 0 0 0;
+    position: absolute;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    z-index: 99;
+}
+nav li a {
+	display:block; 
+	padding:10px 118.5px; 
+	border:1px solid transparent;
+	text-decoration:none;
+	background-color:#000;
+    color:#fff;
+    transition: 1000ms;
+}
+nav ul a:hover { 
+    background-color:#888;
+    color: #000;
+}
+nav ul ul { 
+	display:none; 
+	width:100%; 
+	position:absolute; 
+	left:0; 
+}
+nav ul ul li { 
+	float:none;/* Não deixa os subitems ficarem um ao lado do outro */
+    border-top: 5px dashed #fff;
+}
+nav ul ul a { 
+	padding:5px; 
+    font-size:1em;
+}/*Link da submenu com espaçamento interno de 5px e font 16*/
+nav ul ul a:hover { 
+	background-color:#888;
+}/*Link na lista - Fundo verde qnd o mouse estiver sobre*/
+nav ul li ul.submenu {
+	display:none;
+}/*Deixa como sem display os elementos na classe submenu, isso faz
+ com que ela fique não visivel*/
+nav ul li:hover ul.submenu {
+	display:block;
+}/*Deixa como display bloco os elementos na classe 
+submenu enquanto o mouse estiver sobre o li, isso faz a submenu aparecer */
+
+/* Fim da segunda parte do cabeçalho (menu) */
+
+/* Fim do cabeçalho */
+
+/* Inicio do corpo da página */
+
+/* Inicio do carousel */
+#carrosel{
+    margin: auto;
+    background-color: #000;
+    text-align: center;
+}
+#ant, #prox{
+    width: 70px;
+    position: absolute;
+    z-index: 1;
+}
+#ant{
+    left: 5px;
+    top: 200px;
+}
+#prox{
+    right: 5px;
+    top: 200px;
+}
+#itens{
+    list-style:none; 
+	width:100%; 
+	height:451.36px; 
+	margin: 0 auto;
+	padding:0; 
+	overflow: hidden;
+    position: relative;
+}
+#itens li{
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    z-index: 0;
+}
+#itens img{
+    width: 100%;
+}
+/* Fim do carousel */
+
+/* Incio do conteudo */
+main .pipe::before{
+	content: "";	
+	display: block;
+	width: 95%;
+	height: 5px;
+	background-color: #000;
+    margin: 10px auto;
+    position: relative  ;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    z-index: 99;
+}
+aside h2{
+    font-size: 5em;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+aside ol li{
+    font-size: 3.5em;
+    line-height: 200%;
+}
+main article h2{
+    font-size: 4em;
+    margin-bottom: 15px;
+}
+main article a{
+    text-decoration: none;
+    color: #000;
+}
+main article p{
+    font-size: 3em;
+    line-height: 120%;
+}
+main article .DW{
+    width: 25%;
+    float: left;
+    margin-right: 15px;
+}
+.grid-6 .grid-3, .grid-6 .grid-5, .grid-6 .grid-8{
+    margin-left: 0;
+    margin-bottom: 15px;
+}
+main article .DeathS{
+    width: 100%;
+}
+main article .AgathaC{
+    width: 40%;
+    float: left;
+}
+/* Fim do conteudo */
+
+/* Inicio do rodapé */
+footer{
+    background-color: #000;
+    padding-bottom: 10px;
+    text-align: center;
+}
+footer div{
+    margin-top: 10px;
+}
+footer h3{
+    font-size: 3em;
+    color: #fff;
+}
+footer .icones_redes{
+    margin: 15px auto;
+}
+footer .icones_redes img{
+    width: 10%;
+    margin-left: 7px;
+}
+footer .container .pipe::before{
+	content: "";	
+	display: block;
+	width: 5px;
+	height: 110px;
+	background-color: #fff;
+    margin: 0px 0 0 0;
+    position: absolute;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    z-index: 99;
+}
+/* Fim do rodapé */
+
+/* Fim do corpo da página */

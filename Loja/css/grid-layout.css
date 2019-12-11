@@ -1,0 +1,69 @@
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	margin: 0/*top e bottom*/ auto/*right e left*/;
+	position: relative;
+}
+
+.container:after, .container:before {
+	content: " ";
+	display: table;
+}
+
+.container:after {
+	clear: both;
+}
+
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-2-66{
+	float: left;
+	margin-left: 0.65%;
+	margin-right: 0.65%;
+}
+
+.grid-1 	{width: 11.20%;}
+.grid-2 	{width: 23.70%;}
+.grid-3 	{width: 36.20%;}
+.grid-4 	{width: 48.70%;}
+.grid-5 	{width: 61.20%;}
+.grid-6 	{width: 73.70%;}
+.grid-7 	{width: 86.20%;}
+.grid-8 	{width: 98.70%;}
+.grid-2-66	{width: 31.95%;}
+
+
+/*media query*/
+@media only screen and (min-width: 1024px) and (max-width: 1440px){
+	.container {
+		width: 100%;
+	}
+
+	.grid-1 	{width: 11.20%;}
+	.grid-2 	{width: 23.70%;}
+	.grid-3 	{width: 36.20%;}
+	.grid-4 	{width: 48.70%;}
+	.grid-5 	{width: 61.20%;}
+	.grid-6 	{width: 73.70%;}
+	.grid-7 	{width: 86.20%;}
+	.grid-8 	{width: 98.70%;}
+	.grid-2-66	{width: 31.95%;}
+}
+
+/* @media only screen and (max-width: 1024px){
+	.container {
+		width: 100%;
+	}
+
+	.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, 
+	.grid-6, .grid-7, .grid-8{
+		width: 100%;
+		float:none;
+		margin: 0 0 10px 0;
+	}
+} */

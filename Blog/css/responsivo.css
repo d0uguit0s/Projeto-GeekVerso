@@ -1,0 +1,43 @@
+@media only screen and (min-width: 700px) and (max-width: 1024px){
+    /* Inicio do Titulo e da busca */
+    .titulo{
+        text-align: center;
+        color: #000;
+        font-size: 11em;
+        font-family: 'Bad Signal';
+        text-shadow: -5px 5px 1px #605b5b;
+    }
+    .busca input{
+        width: 89%;
+        font-family: 'Bad Signal';
+        background-color: #000;
+        border-style: none;
+        border-radius: 10px 10px;
+        padding: 10px 0 7px 0;
+        margin: 0;
+        color: white;
+        font-size: 2.8em;
+    }
+    .busca input::placeholder{
+        color: #fff;
+        padding-left: 10px;
+        font-size: 1em;
+    }
+    .busca button{
+        width: 7%;
+        background-color: #fff;
+        border-style: none;
+        border-radius: 10px 10px;
+        padding: 10px 10px 8px 10px;
+        transition: 1000ms;
+    }
+    .busca img{
+        width: 25px;
+        height: 25px;
+    }
+    .busca button:hover{
+        background-color: #000;
+        cursor: pointer;
+    }
+    /* Fim do Titulo e da busca */
+}

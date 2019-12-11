@@ -1,0 +1,252 @@
+/* Importando a fonte "Bad Signal" para utiliza-la livremente no código */
+@font-face{
+    font-family: 'Bad Signal';/*Definindo o nome da nova fonte*/
+    src: url(../fonts/Bad_Signal.otf);/*Indicando o local onde a nova fontes está localizada*/
+}
+body{
+    font-size: 62.5%;
+    background: linear-gradient(90deg, rgba(37.5,37.5,37.5,1) 0%, rgba(255,255,255,1) 50%, rgba(37.5,37.5,37.5,1) 100%);/* Definindo o gradiente no background do cabeçalho */
+}
+/* Inicio do cabeçalho */
+
+/* Inicio da primeira parte do cabeçalho */
+header{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 50%, rgba(0,0,0,1) 100%);/* Definindo o gradiente no background do cabeçalho */
+}
+
+/* Inicio da Logo */
+.logo{
+    margin-bottom: 10px;
+}
+.logo img{
+    width: 70%;
+}
+/* Fim da logo */
+
+/* Inicio do Titulo e da busca */
+.titulo{
+    text-align: center;
+    color: #000;
+    font-size: 17em;
+    font-family: 'Bad Signal';
+    text-shadow: -5px 5px 1px #605b5b;
+}
+.busca input{
+    width: 89%;
+    font-family: 'Bad Signal';
+    background-color: #000;
+    border-style: none;
+    border-radius: 10px 10px;
+    padding: 10px 0 7px 0;
+    margin: 0;
+    color: white;
+    font-size: 2.8em;
+}
+.busca input::placeholder{
+    color: #fff;
+    padding-left: 10px;
+    font-size: 1em;
+}
+.busca button{
+    width: 7%;
+    background-color: #fff;
+    border-style: none;
+    border-radius: 10px 10px;
+    padding: 10px 10px 8px 10px;
+    transition: 1000ms;
+}
+.busca img{
+    width: 25px;
+    height: 25px;
+}
+.busca button:hover{
+    background-color: #000;
+    cursor: pointer;
+}
+/* Fim do Titulo e da busca */
+
+/* Inicio do Login */
+.login .icone{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+.login p, .login a{
+    font-family: 'Bad Signal';
+    color: #605b5b;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1px;
+    text-decoration: none;
+}
+.login a:hover{
+    color: #fff;
+}
+.login .redes p{
+    font-size: 2.3em;
+}
+.login .redes{
+    margin-top: 20px;
+}
+.login .icones_redes img{
+    width: 15%;
+    margin-left: 7px;
+}
+.login .icones_redes img:hover{
+    cursor: pointer;
+}
+.login .icones_redes{
+    margin-top: 10px;
+    margin-left: 68px;
+}
+/* Fim do Login */
+/* Fim da primeira parte do cabeçalho */
+
+/* Inicio da segunda parte do cabeçalho (menu) */
+nav{
+    position: relative;
+    z-index: 10;/* Deixa a barra de navegação por cima de tudo dentro dela */
+    font: 2.8em 'Bad Signal';
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+nav li{
+    position: relative;
+    float: left;
+    list-style: none;
+    text-align: center;
+}
+nav ul .pipe::before{
+	content: "";	
+	display: block;
+	width: 5px;
+	height: 35px;
+	background-color: #fff;
+    margin: 8px 0 0 0;
+    position: absolute;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    z-index: 99;
+}
+nav li a {
+	display:block; 
+	padding:10px 78.1px; 
+	border:1px solid transparent;
+	text-decoration:none;
+	background-color:#000;
+    color:#fff;
+    transition: 1000ms;
+}
+nav ul a:hover { 
+    background-color:#888;
+    color: #000;
+}
+nav ul ul { 
+	display:none; 
+	width:100%; 
+	position:absolute; 
+	left:0; 
+}
+nav ul ul li { 
+	float:none;/* Não deixa os subitems ficarem um ao lado do outro */
+    border-top: 5px dashed #fff;
+}
+nav ul ul a { 
+	padding:5px; 
+    font-size:1em;
+}/*Link da submenu com espaçamento interno de 5px e font 16*/
+nav ul ul a:hover { 
+	background-color:#888;
+}/*Link na lista - Fundo verde qnd o mouse estiver sobre*/
+nav ul li ul.submenu {
+	display:none;
+}/*Deixa como sem display os elementos na classe submenu, isso faz
+ com que ela fique não visivel*/
+nav ul li:hover ul.submenu {
+	display:block;
+}/*Deixa como display bloco os elementos na classe 
+submenu enquanto o mouse estiver sobre o li, isso faz a submenu aparecer */
+
+/* Fim da segunda parte do cabeçalho (menu) */
+
+/* Fim do cabeçalho */
+
+/* Inicio do corpo da página */
+
+/* Inicio do carousel */
+#next, #prev{
+    width: 100px;
+    margin-bottom: 100px;
+}
+#carousel{
+    width: 100%;
+    height: 315px;
+    margin: auto;
+    background-color: #000;
+    text-align: center;
+}
+#itens{
+    overflow: hidden;
+    width: 980px;
+    height: 315px;
+    display: inline-block;
+}
+#itens ul{
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+/* Fim do carousel */
+#titop{
+    font-size: 50px;
+    text-align: center;
+}
+.top10{
+    font-size: 35px ;
+	border: #000 solid 1px;
+	float: left;
+	width: 25%;
+	height: 100%;
+	text-align: left;
+	padding-bottom:27.6%; 
+	margin-top: 1%;
+}
+.imgs { 
+    float: right;
+}
+.DoctorW{
+    max-width: 500px;
+    max-height: 400px;
+    float: right;
+
+}
+.DeathS{
+    max-width: 300px;
+    max-height: 195px;
+    float: right;
+
+}
+.AgathaC{
+    max-width: 195px;
+    max-height: 195px;
+    float: right;
+}
+.tiart{
+    font-size: 28px;
+    font-family:'Bad Signal';
+}
+.artigos{
+    float: right;
+}
+.artigos article p{
+	border: #000 solid 1px;
+	width: 74%;
+	float: right;
+	margin-top: 1%;
+    padding-top: 2%;
+/* Fim do corpo da página */

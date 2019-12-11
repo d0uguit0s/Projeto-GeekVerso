@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>GeekVerso</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- arquivo de grid.css -->
+    <link rel="stylesheet" href="css/grid-layout.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- arquivo de responsividade -->
+    <!-- <link rel="stylesheet" href="css/responsivo.css"> -->
+</head>
+<body>
+    <!-- Inicio do cabeçalho -->
+
+    <!-- Fim da primeira parte do cabeçalho -->
+    <header>
+        <div class="container">
+            <!-- Inicio da Logo -->
+            <a href="index.html" class="grid-2 logo">
+                <img src="img/Logo.png" alt="Logo do site">
+            </a>
+            <!-- Fim da Logo -->
+
+            <!-- Inicio do Titulo e barra de pesquisa -->
+            <div class="grid-4 titulo-busca">
+                <h1 class="titulo">GEEKVERSO</h1>
+                <div class="busca">
+                    <input type="text" placeholder="Busca...">
+                    <button id="btn_busca">
+                        <img src="img/Lupa.png" alt="Ilustração de uma lupa dentro de um botão de pesquisa">
+                    </button>
+                </div>
+            </div>
+            <!-- Fim do Titulo e barra de pesquisa -->
+
+            <!-- Inicio do Login/Cadastro -->
+            <div class="grid-2 login">
+                <img class="icone" src="img/Icones/Login.png" alt="Icone de Login">
+                <p>
+                    <a href="#">Login</a>/<a href="#">Cadastro</a>
+                </p>
+
+                <div class="redes">
+                    <p>Entre com as redes sociais</p>
+                    <div class="icones_redes">
+                        <img class="google" src="img/Icones/normais/google.png" alt="Icone para login com uma conta do Google">
+                        <img class="twitter" src="img/Icones/normais/twitter.png" alt="Icone para login com uma conta do Twitter">
+                        <img class="facebook" src="img/Icones/normais/Facebook.png" alt="Icone para login com uma conta do Facebook">
+                        <img class="instagram" src="img/Icones/normais/Instagram.png" alt="Icone para login com uma conta do Instagram">
+                    </div>
+                </div>
+            </div>
+            <!-- Fim do Login/Cadastro -->
+        </div>
+        <!-- Fim da primeira parte do cabeçalho -->
+
+        <!-- Inicio da segunda parte do cabeçalho (menu) -->
+        <div class="container menus">
+            <nav class="grid-8 navegacao">
+                <ul>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li class="pipe">
+                        <a href="promocoes.html">TV</a>
+                        <ul class="submenu">
+                            <li><a href="cinema.html">Cinema</a></li>
+                            <li><a href="series.html">Séries</a></li>
+                            <li><a href="animes.html">Animes</a></li>
+                        </ul>
+                    </li>
+                    <li class="pipe">
+                        <a href="pdm.html">Fórum</a>
+                        <ul class="submenu">
+                            <li><a href="cinema.html">Debates</a></li>
+                            <li><a href="series.html">Teorias</a></li>
+                            <li><a href="animes.html">Criticas</a></li>
+                        </ul>
+                    </li>
+                    <li class="pipe">
+                        <a href="novidades.html">Leituras</a>
+                        <ul class="submenu">
+                            <li><a href="cinema.html">Livros</a></li>
+                            <li><a href="series.html">Mangás</a></li>
+                            <li><a href="animes.html">HQ's</a></li>
+                        </ul>
+                    </li>
+                    <li class="pipe">
+                        <a href="kits.html">Games</a>
+                        <ul class="submenu">
+                            <li><a href="cinema.html">PS4</a></li>
+                            <li><a href="series.html">Xbox One</a></li>
+                            <li><a href="animes.html">Switch</a></li>
+                            <li><a href="animes.html">PC</a></li>
+                            <li><a href="animes.html">Outros</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Inicio do corpo da página -->
+    <main>
+        <!-- Inicio do carousel -->
+        <div id="carrosel" class="container">
+            <div class="grid-8">
+                <img src="img/seta_esq.png" alt="" id="ant">
+                    <ul id="itens">
+                        <li class="ativo"><div class="item"><img src="img/Banners/Banner Vingadores.png" alt=""></div></li>
+                        <li><div class="item"><img src="img/Banners/Banner Vingadores.png" alt=""></div></li>
+                        <li><div class="item"><img src="img/Banners/Banner Vingadores.png" alt=""></div></li>
+                        <li><div class="item"><img src="img/Banners/Banner Vingadores.png" alt=""></div></li>
+                    </ul>
+                <img src="img/seta_dir.png" alt="" id="prox">
+            </div>
+        </div>
+        <!-- Fim do carousel -->
+        
+        <div class="container conteudo pipe">
+            <aside class="grid-2">
+                <h2>TOP 10</h2>
+                <ol>
+                    <li>1 - Death Stranding</li>
+                    <li>2 - Mr. Robot</li>
+                    <li>3 - Looking for Alaska</li>
+                    <li>4 - Coringa</li>
+                    <li>5 - Soundtrack: Coringa</li>
+                    <li>6 - Doctor Who</li>
+                    <li>7 - Dark: Teorias</li>
+                    <li>8 - Dr. Stone</li>
+                    <li>9 - Mundia de Free Fire</li>
+                    <li>10 - Time Corinthians</li>
+                </ol>
+            </aside>
+            <div class="grid-6">
+                <div class="container grid-8">
+                    <article>
+                        <img class="DW" src="img/Artigos/Doctor Who.jpg" alt="Imagem de Doctor Who">
+                        <h2><a href="doctorwho.html">Doctor Who e seus mais de 50 anos</a></h2>
+                        <p>
+                            Doctor Who, uma das série mais longas de todos os tempos, hoje se encontra em sua 12º temporada
+                            (new), e é uma série de ficção científica, que tem como foco principal um excêntrico alienígena
+                            queviaja através do espaço-tempo com a sua máquina do tempo, a sua queridaT..A.R.D.I.S., que se
+                            assemelha á uma...
+                            Doctor Who, uma das série mais longas de todos os tempos, hoje se encontra em sua 12º temporada
+                            (new), e é uma série de ficção científica, que tem como foco principal um excêntrico alienígena
+                            queviaja através do espaço-tempo com a sua máquina do tempo, a sua...
+                        </p>
+                    </article>
+                </div>
+                <div class="container">
+                    <div class="grid-3">
+                        <article>
+                            <img class="DeathS" src="img/Artigos/Death Stranding.jpg" alt="Imagem de Death Stranding">
+                            <h2><a href="deathstranding.html">DEATH STRANDING</a></h2>
+                            <p>
+                                Death Stranding: saiba mais 
+                                sobre o novo jogo desenvolvido
+                                por Hideo Kojima.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="grid-5">
+                        <article>
+                            <img class="AgathaC" src="img/Artigos/Agatha Christie.png" alt="Imagem de Agatha Christie">
+                                <h2 class="tiart"><a href="agathachristie.html">Agatha Christie</a></h2>                    
+                                <p class="sem_margem">
+                                    Saiba mais sobre Agatha Christie, uma das escritoras 
+                                    mais vendidas estando atrás apenas de Shakespare e da Bíblia.
+                                    Agatha Christie foi uma escritora britânica que atuou como...
+                                    Saiba mais sobre Agatha Christie, uma das escritoras 
+                                    mais vendidas estando atrás apenas de Shakespare e da Bíblia.
+                                    Agatha Christie foi uma...
+                                </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+            </div>
+    <!-- Fim do corpo da página -->
+
+    <footer>
+        <div class="container">
+            <div class="grid-2-66">
+                <h3>Quem somos</h3>
+                <h3>Onde estamos</h3>
+                <h3>Fale conosco</h3>
+            </div>
+            <div class="grid-2-66 pipe">
+                <h3>Nos siga nas nossas redes sociais</h3>
+                <div class="icones_redes">
+                    <img class="google" src="img/Icones/normais/google.png" alt="">
+                    <img class="twitter" src="img/Icones/normais/twitter.png" alt="">
+                    <img class="facebook" src="img/Icones/normais/facebook.png" alt="">
+                    <img class="instagram" src="img/Icones/normais/instagram.png" alt="">
+                </div>
+            </div>
+            <div class="grid-2-66 pipe">
+                <h3>Formas de Pagamento</h3>
+            </div>
+        </div>
+    </footer>
+    <!-- JQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/carrossel.js"></script>
+    <!-- Bootstrap JS -->
+	<!-- <script src="js/bootstrap.bundle.js"></script> -->
+</body>
+</html>

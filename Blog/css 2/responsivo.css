@@ -1,0 +1,121 @@
+@media only screen and (min-width: 700px) and (max-width: 1025px){
+    /* Inicio do cabeçalho */
+    header{
+        background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgba(255,0,0,1) 50%, rgba(0,0,0,1) 90%);/* Definindo o gradiente no background do cabeçalho */
+    }
+
+    /* Inicio da Logo */
+    .logo{
+        margin-bottom: 10px;
+    }
+    .logo img{
+        width: 70%;
+    }
+    /* Fim da logo */
+
+    /* Inicio do Titulo e da busca */
+    .titulo{
+        text-align: center;
+        color: #000;
+        font-size: 12em;
+        font-family: 'Bad Signal';
+        text-shadow: -5px 5px 1px #605b5b;
+    }
+    .busca input{
+        width: 85%;
+        font-family: 'Bad Signal';
+        background-color: #000;
+        border-style: none;
+        border-radius: 10px 10px;
+        padding: 5px 0 4px 0;
+        margin: 0;
+        color: white;
+        font-size: 2.5em;
+    }
+    .busca input::placeholder{
+        color: #fff;
+        padding-left: 10px;
+        font-size: 0.85em;
+    }
+    .busca button{
+        width: 7%;
+        background-color: #fff;
+        border-style: none;
+        border-radius: 10px 10px;
+        padding: 8px 10px 6px 10px;
+    }
+    .busca img{
+        width: 20px;
+        height: 20px;
+    }
+    .busca button:hover{
+        background-color: #000;
+        cursor: pointer;
+    }
+    /* Fim do Titulo e da busca */
+
+    /* Inicio do Login */
+    .login .icone{
+        width: 40%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+    .login p, .login a{
+        font-family: 'Bad Signal';
+        color: #605b5b;
+        text-align: center;
+        font-size: 1.3em;
+        text-decoration: none;
+    }
+    .login .redes{
+        margin-top: 10px;
+    }
+    .login .icones_redes img{
+        width: 17%;
+    }
+    .login .icones_redes{
+        margin-top: 10px;
+        margin-left: 55px;
+    }
+    /* Fim do Login */
+    .menu_sandwich{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    /* Inicio do cabeçalho */
+    header{
+        background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgba(255,0,0,1) 50%, rgba(0,0,0,1) 90%);/* Definindo o gradiente no background do cabeçalho */
+    }
+
+    /* Inicio da Logo */
+    .logo img{
+        width: 40%;
+        margin-left: 170px;
+    }
+    /* Fim da logo */
+
+    /* Inicio do Titulo e da busca */
+    .titulo{
+        text-align: center;
+        color: #000;
+        font-size: 12em;
+        font-family: 'Bad Signal';
+        text-shadow: -5px 5px 1px #605b5b;
+    }
+    .busca{
+        display: none;
+    }
+    /* Fim do Titulo e da busca */
+
+    /* Inicio do Login */
+    .login{
+        display: none;
+    }
+    .menu_sandwich{
+        display: block;
+    }
+    /* Fim do Login */
+} 
