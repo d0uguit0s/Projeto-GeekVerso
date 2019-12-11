@@ -100,27 +100,38 @@ header{
     margin-top: 10px;
     margin-left: 68px;
 }
+
+iframe::-webkit-scrollbar{
+    display: none;
+}
+.modal-box iframe{
+    height: 100%;
+    overflow: visible;
+}
+div .fechar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 0 2.7% 1%;
+    color: rgba(0,0,0,0);
+}
 /* Fim do Login */
 /* Fim da primeira parte do cabeçalho */
 
 /* Inicio da segunda parte do cabeçalho (menu) */
-nav.grid-8{
+.navegacao{
     position: relative;
     z-index: 10;/* Deixa a barra de navegação por cima de tudo dentro dela */
     font: 2.8em 'Bad Signal';
     margin-left: 0;
     margin-right: 0;
     width: 100%;
+    background-color: #000;
 }
-nav ul{
+.navegacao ul{
     padding: 0;
     margin: 0;
-}
-nav li{
-    position: relative;
-    float: left;
     list-style: none;
-    text-align: center;
 }
 nav ul .pipe::before{
 	content: "";	
@@ -134,10 +145,15 @@ nav ul .pipe::before{
     border-radius: 20px;
     z-index: 99;
 }
+nav li{
+    position: relative;
+    float: left;
+    list-style: none;
+    text-align: center;
+}
 nav li a {
 	display:block; 
-	padding:10px 86px; 
-	border:1px solid transparent;
+	padding:10px 86px;
 	text-decoration:none;
 	background-color:#000;
     color:#fff;
@@ -147,6 +163,7 @@ nav ul a:hover {
     background-color:#888;
     color: #000;
 }
+
 nav ul ul { 
 	display:none; 
 	width:100%; 
@@ -272,6 +289,9 @@ footer .icones_redes{
 footer .icones_redes img{
     width: 10%;
     margin-left: 7px;
+}
+footer .icones_redes img:hover{
+    cursor: pointer;
 }
 footer .container .pipe::before{
 	content: "";	
